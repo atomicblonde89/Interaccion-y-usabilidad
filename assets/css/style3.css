@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.sky {
+    position: relative;
+    background-color: #79c0e4;
+    width: 100%;
+    height: 550px;
+}
+
+@keyframes sun {
+    0% { left: 150px; top: 40px; opacity: 0;}
+    20% { left: 150px; top: 40px; opacity: 0;}
+    100% { left: 150px; top: 40px; opacity: 1;}
+}
+.sun {
+    position: absolute;
+    animation-name: sun;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    display: block;
+    left: 150px;
+    top: 40px;
+    
+}
+
+.sun svg {
+    height: 180px;
+    position: relative;
+    bottom: 30px;
+    right:90px;
+}
+
+@keyframes text {
+    0% { left: 150px; opacity: 0;}
+    30% { left: 150px; opacity: 0;}
+    100% { left: 150px; opacity: 1;}
+}
+.text {  
+    position: absolute;          
+    animation-name: text;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    left: 150px;
+    top: 150px;
+    color: white;
+}
+.sand {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-color: #f1eddb;
+}
+.palm-tree {
+    position: absolute;
+    left: 750px;
+    top: -70px;
+    animation-name: palm-tree;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+}
+.palm-tree svg {
+    width: 120px;
+    height: 120px;
+}
+@keyframes palm-tree {
+    0% { left: 750px; top:-70px; opacity: 0;}
+    50% { left: 750px; top:-70px; opacity: 0;}
+    100% { left: 750px; top:-70px; opacity: 1;}
+}
+.ball {
+    position: absolute;
+    right: 200px;
+    top: 80px;
+    animation-name: ball;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+}
+
+@keyframes ball{
+    0% { right: 0px; top:80px; opacity: 0; }
+    40% { right: 0px; top:80px; opacity: 0; }
+    100% { right: 200px; top:80px; opacity: 1; }
+}
+.umbrella {
+    position: absolute;
+    left: 70px;
+    animation-name: umbrella;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+}
+@keyframes umbrella {
+    0% { left: 0px; opacity: 0; }
+    40% { left: 0px; opacity: 0; }
+    100% { left: 70px; opacity: 1; }
+}
+.people {
+    position: absolute;
+    right: 300px;
+    top: 120px;
+}
