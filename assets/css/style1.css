@@ -1,0 +1,29 @@
+.navbar {
+    border: 1px solid black ;
+    margin: 0 auto;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+}
+
+.logo {
+    float: left;
+    padding-left: 5rem;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+}
+
+.navbar__menu {
+   float: right;
+   padding-right: 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 3rem;
+}
